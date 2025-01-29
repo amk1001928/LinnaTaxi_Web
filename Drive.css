@@ -1,179 +1,252 @@
-
-/* Header Styles */
-.header {
-  background-image: url('Images/HeaderBack.png');
-  background-size: cover;
-  background-position: center;
-  padding: 0rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 90px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-/* Logo container styling */
-.logo {
-  position: absolute;
-  z-index: 2;
-  top: 5px;
-  left: 100px;
-}
-
-/* Logo image styling */
-.logo img {
-  width: 120px;         
-  height: auto;         
-  box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-  object-fit: contain;
-}
-
-.logo img:hover {
-  transform: scale(1.1);
-}
-.navbar {
-  height: 100%;
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: center !important;
-  align-items: center;
-  height: 100%;
-  padding-left: 200px;
-}
-
-/* Ensure the hamburger button is on top */
-.custom-toggler {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
-  background-color: #FDD31A !important;
-  border: none;
-  padding: 8px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-
-.custom-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-  width: 20px;
-  height: 20px;
-}
-
-/* Navigation Styles */
-.navbar-nav {
-  gap: 2.3rem;
-}
-.nav-item {
-  margin: 2.5rem;
-}
-
-.menu-button {
-  background-color: #FDD31A;
-  font-family: 'Jost';
-  font-weight: 500;
-  color: black;
-  font-size: 1.2rem;
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  text-decoration: none;
-  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, background-color 0.3s ease;
-  display: inline-block;
-  text-align: center;
-  width: 143px;
-  height: 45px;
-}
-
-.menu-button:hover {
-  background-color: #FFE46E;
-  transform: translateY(-3px);
-  color: black;
-}
-.container-fluid {
-  padding: 0 15px;
-  width: 100%;
-  max-width: 100%;
-}
-.hero-image {
-  background-image: url('Images/driver.jpeg');
-  background-size: cover;
-  background-position: center;
-  filter: brightness(50%);
-  min-height: 50vh;
-}
-
-.signup-section {
-  background: #ffdd49;
-  min-height: 50vh;
-  padding: 2rem;
-}
-
-.form-control, .form-select {
-  margin-bottom: 1rem;
-  box-shadow: 0 0 15px rgba(104, 102, 102, 0.1);
-}
-
-.btn-register {
-  background-color: #f3a006;
-  color: white;
-  width: 100%;
-  padding: 0.75rem;
-  font-weight: bold;
-}
-
-.download-section {
-  background: #ffdd49;
-  min-height: 50vh;
-  padding: 2rem;
+html,body {
+    height: 200vh;
+      margin: 0;
+      padding: 0;
+    }
+    
+    div {
+      width: 50%;
+      height: 50%;
+      float: left;
+    }
+    
+    .top-left {
+      background-image: url(Images/driver.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(50%); 
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      
   
-}
-
-.opportunities-section {
-  background-color: #0f0c03;
-  color: white;
-  min-height: 50vh;
-  padding: 2rem;
-}
-
-.store-icon {
-  width: 160px;
-  transition: transform 0.3s, box-shadow 0.3s;
-  
-}
-
-.store-icon:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-.success-popup {
-  background: white;
-  border-radius: 6px;
-  padding: 2rem;
-  text-align: center;
-}
-
-.success-popup img {
-  width: 100px;
-  margin-top: -3rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .hero-image, .signup-section, .download-section, .opportunities-section {
-      min-height: auto;
+    }
+    .container {
+      height: auto;
+      margin-left: 180px;
+      margin-right: auto;
+      width: 50%;
+      max-width: 1200px;
+      background-color: rgb(255, 255, 255);
+      background-position: center;
+      background-size: cover;
   }
+  
+    .top-right {
+      background: #ffdd49;
+          padding: 0;
+          margin: 0px;
+          font-family: sans-serif ;
+  
+    }
+  
+  
+    .signup{
+      font-size: 40px;
+      text-align: center;
+      margin-top: 110px;
+    }
+    input:focus,
+  input:not(:placeholder-shown) {
+    color: black;
+  }
+  
+  
+    input{
+      position: relative;
+      height: auto;
+      width: 180%;
+      font-size: 1rem;
+      color: #707070;
+      margin-top: 5px;
+      outline: none;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 10px 15px;
+      background:white ;
+      
+      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
+    }
+    select {
+      position: relative;
+      height: auto;
+      width: 200%;
+      font-size: 1rem;
+      color:  #707070;
+      margin-top: 5px;
+      outline: none;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 10px 15px;
+      background:white ;
+      
+      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
+    }
+  
+    select:not([value=""]) {
+      color: #000000; 
+      
+    }
+    select:([value=""]) {
+      color:  #707070;
+      
+    }
+    
+   
+    .btn{ 
+      height: auto;
+      text-align: center;
+      margin-top: 15px;
+      margin-left: 0px;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+      width: 200%;
+      background-color: #f3a006;
+      font-size: 1rem;
+      color: #e2dfdf;
+      outline: none;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      box-shadow: 0 0 15px rgba(104, 102, 102, 0.815);
+  
+    }
+    .popup{
+      width:400px;
+      background: #fff;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(0.1);
+      text-align: center;
+      padding: 0px 30px 30px;
+      color: #333;
+      visibility: hidden;
+      transition:0.4s, top 0.4s;
+
+    }
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
 }
+
+    .popup img{
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0, 0,0, 0.2);
+
+    }
+    .popup h3{
+      font-size: 38px;
+      font-weight: 500;
+      margin: 30px 0 10px;#
+    }
+    .popup button{
+      width: 100%;
+      margin-top: 50px;
+      padding: 10px 0;
+      background: #ffdd49;
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 5px 5px rgba(0, 0,0, 0.2);
+
+    }
+
+    .bottom-left {
+      background: #ffdd49;
+    }
+    
+    .bottom-right {
+      background-color: #0f0c03;
+      color: white;
+      justify-self: center;
+      
+    }
+    h2{
+  
+      align-items: left;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 50px;
+      font-size: 40px;
+  
+    }
+    
+    p.last{
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 20px;
+    }
+    
+    li{
+        font-size: 18px;
+        align-items: left;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 100px;
+    }
+    ul{
+        padding-left:  100px;
+    }
+  
+  
+    .bottom-left {
+      background: #ffdd49;
+      align-items: right;
+      justify-content: center;
+  }
+  
+  .download {
+      font-size: 45px;
+      align-items: center;
+      margin-left: 150px;
+  }
+  
+  .appdown {
+      text-align: left;
+      margin-bottom: 30px;
+  }
+  
+  .appdown img {
+      width: 180%;
+      max-width: 800px;
+      margin-top: -150px;
+      margin-right: -10px;
+      margin-left: -40px;
+  }
+  
+  .appstore {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+  }
+  
+  .appstore img {
+      width: 160px;
+      height: auto;
+      border-radius: 5px;
+      margin-left: 80px;
+  }
+  .appstore img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); }
+
+  
+  @media screen and (max-width: 1040) {
+    .container {
+        width: 80%;
+    }}
