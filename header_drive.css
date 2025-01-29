@@ -11,7 +11,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-image: url('Images/HeaderBack.png');
     background-size: cover; /* Ensure the image covers the entire header */
-    background-position: center; /* Center the image in the header */
+    background-position: center; /* Center the image in the header */  
 }
 
 .header-background {
