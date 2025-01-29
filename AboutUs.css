@@ -2,16 +2,16 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    padding-top: 80px; /* Accounts for fixed header */
+    padding-top: 80px; 
 }
 
 
 /* First Frame */
 .first-frame {
     height: 90vh;
-    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
-    color:black; /* Sets text color to black */
-    padding-left:  5rem; /* Adds padding around the content in the first frame */
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); 
+    color:black; 
+    padding-left:  5rem; 
     padding-top: 2rem;
     padding-right: 20rem;
     padding-bottom: 50rem;
@@ -21,9 +21,9 @@ body {
 /*second Frame */
 .second-frame {
     height: 90vh; 
-    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
-    color:black; /* Sets text color to black */
-    padding-left:  7rem; /* Adds padding around the content in the first frame */
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); 
+    color:black; 
+    padding-left:  7rem;
     padding-top: 1rem;
     padding-right: 7rem;
     padding-bottom: 7rem;
@@ -35,7 +35,7 @@ body {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 130px;
     height: auto;
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer;
 }
 
 .HR_IMG
@@ -62,22 +62,22 @@ body {
 /* adding hover to the images */
 
 .CEO_Img:hover  {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.1); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .IT_IMG:hover  {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 .OPS_IMG:hover  {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .HR_IMG:hover  {
-    transform: scale(1.1); /* Slightly enlarges the image */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
 }
 
 
