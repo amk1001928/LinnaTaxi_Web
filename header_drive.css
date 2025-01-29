@@ -32,7 +32,7 @@
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
     height: auto;
     box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.25), /* Inner shadow */
                 0 4px 8px rgba(0, 0, 0, 0.25);      /* Outer shadow */
@@ -53,13 +53,13 @@
     align-items: center;
     position: relative;
     margin-left: 2rem;
-    gap: 1.5rem;
+    gap: 1rem;
     list-style: none;
 }
 
 .nav ul {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 0;
     padding: 0;
 }
@@ -73,7 +73,7 @@
 .header .nav ul {
     display: flex; /* Arrange items horizontally */
     list-style: none; /* Remove bullet points */
-    gap: 8rem; /* Add equal spacing between menu items */
+    gap: 6rem; /* Add equal spacing between menu items */
     margin: 0; /* Reset margin */
     padding: 0; /* Reset padding */
     margin-left: 23rem;
@@ -83,16 +83,16 @@
 .menu-button {
     background-color: #FDD31A; /* Set background color to yellow */
     color: black; /* Set text color to black */
-    font-family: 'Roboto', sans-serif; /* Set font family */
-    font-size: 1.2rem; /* Set font size */
-    padding: 0.8rem 2rem; /* Add consistent padding for uniform size */
+    font-family: 'Jost';
+    font-size: 1.1rem; /* Set font size */
+    padding: 0.75rem 2rem; /* Add consistent padding for uniform size */
     border: none; /* Remove border */
     border-radius: 8px; /* Round the corners */
     cursor: pointer; /* Pointer cursor on hover */
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); /* Inner shadow effect */
     text-decoration: none; /* Remove underline from button text */
     display: inline-block; /* Ensure buttons maintain consistent block size */
-    min-width: 60px; /* Set a minimum width for uniformity */
+    min-width: 70px; /* Set a minimum width for uniformity */
     text-align: center; /* Center-align the text within the button */
     transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
 }
