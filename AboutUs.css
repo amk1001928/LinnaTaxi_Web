@@ -8,19 +8,19 @@ body {
 
 /* First Frame */
 .first-frame {
-    height: 90vh;
+    height: 100vh;
     background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
     color:black; /* Sets text color to black */
     padding-left:  5rem; /* Adds padding around the content in the first frame */
-    padding-top: 2rem;
-    padding-right: 20rem;
-    padding-bottom: 50rem;
+    padding-top: 0.5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
 }
 
 
 /*second Frame */
 .second-frame {
-    height: 90vh; 
+    height: 100vh; 
     background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
     color:black; /* Sets text color to black */
     padding-left:  7rem; /* Adds padding around the content in the first frame */
