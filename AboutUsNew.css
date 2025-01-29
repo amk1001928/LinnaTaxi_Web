@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding-top: 80px; /* Accounts for fixed header */
+}
+
+/* Header Styles */
+.header {
+    background-image: url('Images/HeaderBack.png');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 15vh;
+    width: 100%;
+    align-items: center;
+    display: flex; 
+    
+}
+
+.header-background {
+    background-image: url('Images/HeaderBack.png');
+    background-size: cover; /* Ensure the image covers the entire header */
+    background-position: center; /* Center the image in the header */
+    filter: blur(100px);
+
+}
+
+/* Logo Styles */
+.logo {
+    padding: 0.5rem;
+}
+
+.logo img {
+    max-width: 150px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Navigation Styles */
+.menu-button {
+    background-color: #FDD31A; /* Set background color to yellow */
+    color: black; /* Set text color to black */
+    font-family: 'Roboto', sans-serif; /* Set font family */
+    font-size: 1.2rem; /* Set font size */
+    padding: 0.8rem 2rem; /* Add consistent padding for uniform size */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Round the corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); /* Inner shadow effect */
+    text-decoration: none; /* Remove underline from button text */
+    display: inline-block; /* Ensure buttons maintain consistent block size */
+    min-width: 60px; /* Set a minimum width for uniformity */
+    text-align: center; /* Center-align the text within the button */
+    transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.menu-button:hover {
+    background-color: #FFE46E;
+    transform: translateY(-3px);
+    color: black;
+    text-decoration: none;
+}
+
+/* First Frame */
+.first-frame {
+    height: 90vh;
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
+    color:black; /* Sets text color to black */
+    padding-left:  5rem; /* Adds padding around the content in the first frame */
+    padding-top: 2rem;
+    padding-right: 20rem;
+    padding-bottom: 50rem;
+}
+
+
+/*second Frame */
+.second-frame {
+    height: 90vh; 
+    background: linear-gradient(to bottom, #FFE46E 0%, #FDD31A 100%); /* Adds the linear gradient */
+    color:black; /* Sets text color to black */
+    padding-left:  7rem; /* Adds padding around the content in the first frame */
+    padding-top: 1rem;
+    padding-right: 7rem;
+    padding-bottom: 7rem;
+}
+
+/* Image Styles */
+.CEO_Img
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 130px;
+    height: auto;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.HR_IMG
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+.IT_IMG
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+.OPS_IMG 
+{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 100px;
+    height: auto;
+}
+
+/* adding hover to the images */
+
+.CEO_Img:hover  {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.IT_IMG:hover  {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+.OPS_IMG:hover  {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.HR_IMG:hover  {
+    transform: scale(1.1); /* Slightly enlarges the image */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+
+/* Card Styles for background */
+.card-body {
+background-color: #f6ca07;
+
+}
+
+/* Caption Styles */
+.caption1, .caption2, .caption3, .caption4
+{
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+}
+
+/* span Styles */
+.span1, .span2, .span3, .span4
+{
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .nav {
+        margin-top: 1rem;
+    }
+    
+    .menu-button {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .logo img {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.5rem 0;
+    }
+    
+    .nav .d-flex {
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    
+    .menu-button {
+        margin: 0.5rem;
+    }
+    
+    .first-frame,
+    .second-frame {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 120px;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-button {
+        width: 100%;
+        text-align: center;
+        margin: 0.25rem 0;
+    }
+}
+
