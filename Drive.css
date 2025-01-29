@@ -107,7 +107,7 @@
   max-width: 100%;
 }
 .hero-image {
-  background-image: url('Images/Driver.jpg');
+  background-image: url('Images/driver.jpeg');
   background-size: cover;
   background-position: center;
   filter: brightness(50%);
